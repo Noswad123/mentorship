@@ -9,3 +9,15 @@ type Todo struct {
 	Description string             `json:"description" bson:"description"`
 	Date        string             `json:"date" bson:"date"`
 }
+
+type Mentor struct {
+
+}
+
+type Mentee struct {}
+
+type Meeting struct {}
+
+type Shopifolk struct{}
+
+

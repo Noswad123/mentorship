@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/bmdavis419/the-better-backend/config"
-	"github.com/bmdavis419/the-better-backend/database"
+	// "github.com/bmdavis419/the-better-backend/database"
 	"github.com/bmdavis419/the-better-backend/router"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -18,14 +18,14 @@ func SetupAndRunApp() error {
 		return err
 	}
 
-	// start database
-	err = database.StartMongoDB()
-	if err != nil {
-		return err
-	}
+	// // start database
+	// err = database.StartMongoDB()
+	// if err != nil {
+	// 	return err
+	// }
 
-	// defer closing database
-	defer database.CloseMongoDB()
+	// // defer closing database
+	// defer database.CloseMongoDB()
 
 	// create app
 	app := fiber.New()
